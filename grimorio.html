@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimorio - Biblioteca Babylon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia:wght@400&family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            <i class="fas fa-crown header__icon"></i>
+            Biblioteca Babylon
+            <i class="fas fa-book-open header__icon"></i>
+        </h1>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="libros.html" class="nav__link"><i class="fas fa-book"></i> Catálogo</a></li>
+                <li><a href="autores.html" class="nav__link"><i class="fas fa-feather"></i> Autores</a></li>
+                <li><a href="grimorio.html" class="nav__link active"><i class="fas fa-magic"></i> Grimorio</a></li>
+                <li><a href="sobre.html" class="nav__link"><i class="fas fa-scroll"></i> Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="grimorio-section">
+            <h2 class="section__title">Grimorio del Mes</h2>
+            <div class="grimorio-book">
+                <div class="grimorio-page grimorio-page--left">
+                    <div class="grimorio-content">
+                        <h3 class="grimorio__subtitle">Recomendaciones de los Sabios</h3>
+                        <div class="recommended-books">
+                            <!-- Los libros recomendados se cargarán dinámicamente aquí -->
+                        </div>
+                    </div>
+                </div>
+                <div class="grimorio-page grimorio-page--right">
+                    <div class="grimorio-content">
+                        <h3 class="grimorio__subtitle">Por qué leerlos</h3>
+                        <div class="recommendations-reasons">
+                            <!-- Las razones se cargarán dinámicamente aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="quote-container">
+                <h3 class="section__subtitle">Sabiduría Ancestral</h3>
+                <div class="monthly-quote">
+                    <!-- La cita del mes se cargará dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Sobre el Reino</h3>
+                <p>Biblioteca Babylon, guardiana del conocimiento ancestral y portal a mundos infinitos.</p>
+            </div>
+            <div class="footer__section">
+                <h3>Mapas del Saber</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="libros.html">Catálogo</a></li>
+                    <li><a href="autores.html">Autores</a></li>
+                    <li><a href="grimorio.html">Grimorio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3>Gremio Social</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Biblioteca Babylon. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="grimorio.js"></script>
+</body>
+</html>
